@@ -198,11 +198,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 8rem;
-            color: white;
             margin: 0 auto;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .about-image:hover {
@@ -270,10 +275,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
-            color: white;
             position: relative;
             overflow: hidden;
+        }
+
+        .project-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-header img {
+            transform: scale(1.1);
         }
 
         .project-header::before {
@@ -549,22 +563,25 @@
             <h2 class="section-title">Tentang Saya</h2>
             <div class="about-grid">
                 <div class="about-image">
-                    👨‍💻
+                    <img src="foto.jpeg" alt="Profile Picture">
                 </div>
                 <div class="about-content">
-                    <h3>Halo, Saya Fresh Graduate IT!</h3>
+                    <h3>Yusuf Arif Rahman</h3>
                     <p>Saya adalah lulusan baru dari jurusan Teknologi Informasi dengan passion yang tinggi dalam pengembangan aplikasi. Selama kuliah, saya telah mengembangkan berbagai proyek aplikasi mulai dari web development, mobile Android, hingga aplikasi desktop.</p>
                     <p>Saya memiliki kemampuan yang solid dalam berbagai teknologi dan framework modern, serta selalu antusias untuk belajar teknologi baru dan menghadapi tantangan dalam dunia IT.</p>
                     <div class="skills">
                         <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">C++</span>
                         <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">HTML</span>
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">C#</span>
                         <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MatLab</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">PHP</span>
                     </div>
                 </div>
             </div>
@@ -577,73 +594,70 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🌐</div>
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-Commerce Project">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">E-Commerce Web Application</h3>
                         <p class="project-description">Aplikasi web e-commerce lengkap dengan fitur keranjang belanja, sistem pembayaran, dan dashboard admin. Dibangun menggunakan teknologi modern dengan desain responsif.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Json</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link btn-primary">Live Demo</a>
-                            <a href="#" class="project-link btn-secondary">Source Code</a>
+                            <a href="https://yusufarif20.github.io/" class="project-link btn-primary">Live Demo</a>
+                            <a href="https://github.com/yusufarif20/yusufarif20.github.io" class="project-link btn-secondary">Source Code</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">📱</div>
+                        <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management App">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Task Management Android App</h3>
+                        <h3 class="project-title">Math Quiz Android App</h3>
                         <p class="project-description">Aplikasi Android untuk manajemen tugas dengan fitur reminder, kategori, dan sinkronisasi cloud. Interface yang intuitif dengan material design principles.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">Android Studio</span>
-                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Kotlin</span>
                             <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Material Design</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link btn-primary">Download APK</a>
-                            <a href="#" class="project-link btn-secondary">Source Code</a>
+                            <a href="https://github.com/yusufarif20/QuizMatematika" class="project-link btn-secondary">Source Code</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🖥️</div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Inventory System">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Inventory Management System</h3>
-                        <p class="project-description">Sistem manajemen inventori desktop dengan fitur tracking stok, laporan penjualan, dan manajemen supplier. Dilengkapi dengan sistem backup dan restore data.</p>
+                        <h3 class="project-title">Chess.AI</h3>
+                        <p class="project-description">Chess.AI is a web-based chess game where players compete against an AI opponent powered by the Minimax algorithm with Alpha-Beta Pruning. The AI evaluates moves in real time to provide a strategic and challenging gameplay experience directly in the browser.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">Windows Forms</span>
-                            <span class="tech-tag">SQL Server</span>
-                            <span class="tech-tag">Crystal Reports</span>
-                            <span class="tech-tag">.NET Framework</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Css</span>
+                            <span class="tech-tag">Minimax</span>
+                            <span class="tech-tag">Alpha-Beta Prunning</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link btn-primary">Download</a>
-                            <a href="#" class="project-link btn-secondary">Source Code</a>
+                            <a href="https://yusufarif20.github.io/chess.ai/" class="project-link btn-primary">Live Demo</a>
+                            <a href="https://github.com/yusufarif20/chess.ai" class="project-link btn-secondary">Source Code</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">📊</div>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Data Analytics Dashboard">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Data Analytics Dashboard</h3>
+                        <h3 class="project-title">Frozen Food Sales System</h3>
                         <p class="project-description">Dashboard interaktif untuk visualisasi data dengan berbagai chart dan grafik. Memiliki fitur filter, export data, dan real-time updates.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
@@ -653,48 +667,45 @@
                             <span class="tech-tag">Bootstrap</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link btn-primary">Live Demo</a>
-                            <a href="#" class="project-link btn-secondary">Source Code</a>
+                            <a href="https://github.com/yusufarif20/Aplikasi-Penjualan-frosenfood" class="project-link btn-secondary">Source Code</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🎮</div>
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mobile Game">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Mobile Game Application</h3>
                         <p class="project-description">Game mobile sederhana dengan konsep puzzle dan adventure. Dilengkapi dengan sistem score, achievement, dan multiplayer local.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Kotlin</span>
                             <span class="tech-tag">C#</span>
-                            <span class="tech-tag">Android SDK</span>
-                            <span class="tech-tag">Unity Analytics</span>
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">Firebase</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link btn-primary">Play Store</a>
-                            <a href="#" class="project-link btn-secondary">Source Code</a>
+                            <a href="https://github.com/yusufarif20/project25neww" class="project-link btn-secondary">Source Code</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🔐</div>
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Authentication System">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Authentication System</h3>
-                        <p class="project-description">Sistem autentikasi dan autorisasi yang robust dengan multi-factor authentication, role-based access control, dan session management.</p>
+                        <h3 class="project-title">SISABox IoT</h3>
+                        <p class="project-description">Smart Composting System with Sensors and Educational Mobile App Integration</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Android stdio</span>
                             <span class="tech-tag">JWT</span>
                             <span class="tech-tag">bcrypt</span>
                             <span class="tech-tag">Redis</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link btn-primary">Demo</a>
                             <a href="#" class="project-link btn-secondary">Source Code</a>
                         </div>
                     </div>
@@ -712,28 +723,28 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h4>Email</h4>
-                            <p>your.email@example.com</p>
+                            <p>yusufarifrahman20@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
                         <div>
                             <h4>Phone</h4>
-                            <p>+62 xxx-xxxx-xxxx</p>
+                            <p>+62 857-7934-8608</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">🌐</div>
                         <div>
                             <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/yourprofile</p>
+                            <p>linkedin.com/in/yusuf-arif-rahman-085803309/</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">💼</div>
                         <div>
                             <h4>GitHub</h4>
-                            <p>github.com/yourusername</p>
+                            <p>github.com/yusufarif20</p>
                         </div>
                     </div>
                 </div>
@@ -764,7 +775,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Fresh Graduate IT Developer. All rights reserved.</p>
+            <p>&copy; 2025 Fresh Graduate IT Developer. Yusuf Arif Rahman. All rights reserved.</p>
         </div>
     </footer>
 
